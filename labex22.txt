@@ -1,0 +1,25 @@
+using System;
+
+namespace Computeave
+    class Computerave
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+
+            Console.WriteLine("Enter 5 grades separated by a new line:");
+
+            for (int i = 0; i < 5; i++)
+            {
+                sum += int.Parse(Console.ReadLine());
+            }
+
+            double average = (double)sum / 5;
+            int roundedAverage = (int)(average + 0.5);
+
+            Console.WriteLine("The average is " + average);
+            
+            
+        }
+    }
+}
